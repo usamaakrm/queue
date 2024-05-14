@@ -1,0 +1,431 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 450;
+}
+
+section{
+    padding: 0rem 5rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row;
+    background-color: #eef2ef;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+.form h4{
+    padding: 10px;
+    border: 2px solid #9dc4b5;
+    color: #086153;
+    width: 20%;
+    margin: 1rem;
+    text-align: left;
+    border-radius: 10px;
+    font-weight: 450;
+    background-color: white;
+}
+
+.banner-content{
+    color: #086153;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 30px 0;
+    border: 2px solid #9dc4b596;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+
+.banner-content h3{
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-content p{
+    width: 50%;
+    margin: auto;
+    color: black;
+}
+
+.popup-cont, .second{
+    background-color: #eef2ef;
+    padding: 30px 10px;
+    border-radius: 20px;
+}
+
+.second{
+  display: none;
+}
+
+.datam{
+  background-color: #086153;
+  padding: 20px 40px;
+  margin: 5rem;
+  border-radius: 20px;
+}
+
+.datam a{
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.time-item{
+    background-color: #086153;
+    padding: 30px 20px;
+    border-radius: 20px;
+    color: white;
+    width: 180px;
+    font-size: 1.3rem;
+    align-items: center;
+    align-content: center;
+}
+
+.time-item h5{
+   margin-top: -5px;
+}
+
+.time-item span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.last-para p{
+    width: 50%;
+    margin: 3rem auto;
+}
+
+.loaders  h3{
+    text-align: center;
+    color: #086153;
+    width: 100%;
+}
+
+.loaderWrapper {
+    height: 90px;
+    overflow: hidden;
+   
+  }
+  
+  .loaderInner {
+    position: relative;
+    animation-name: languageSwitch;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.4s;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+  }
+  
+  .loader {
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    width: 190px;
+    height:90px;
+  }
+  
+  .letter {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: #086153;
+    animation-name: letterAppears;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 1px;
+    visibility: hidden;
+    animation-delay: .5s;
+  }
+  
+  .letterO {
+    background-color: white;
+    height: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    animation-name: loader;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    border: 10px solid #086153;
+  }
+  .welcome {
+    font-family: sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: #086153;
+    height: 90px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* animation keyframes */
+  
+  @keyframes loader {
+    0% {
+      width: 1px;
+    }
+    60% {
+      background-color: #9dc4b5;
+      width: 100%;
+    }
+    90% {
+      background-color: white;
+    }
+    100% {
+      background-color: white;
+      width: 100%;
+    }
+  }
+  
+  @keyframes letterAppears {
+    0% {
+      width: 1px;
+      transform: rotate(15deg);
+    }
+    100% {
+      width: 100%;
+      transform: rotate(0);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes languageSwitch {
+    0% {
+      bottom: 0;
+    }
+    15% {
+      bottom: 0;
+    }
+    20% {
+      bottom: 90px;
+    }
+    35% {
+      bottom: 90px;
+    }
+    40% {
+      bottom: 180px;
+    }
+    55% {
+      bottom: 180px;
+    }
+    60% {
+      bottom: 270px;
+    }
+    75% {
+      bottom: 270px;
+    }
+    80% {
+      bottom: 360px;
+    }
+    95% {
+      bottom: 360px;
+    }
+    100% {
+      bottom: 450px;
+    }
+  }
+
+  /* .load-design{
+    position: absolute;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  } */
+
+
+  /*  loading bar */
+  .wrapper {
+    width: 520px;
+    max-width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .progress-bar {
+    height: 25px;
+    width: 100%;
+    background-color: #9dc4b5;
+    border-radius: 20px;
+    overflow: hidden;
+    font-size: 1.2rem;
+    box-shadow: 2px 0 10px inset rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  * + .progress-bar {
+    margin-top: 2rem;
+  }
+  
+  .bar {
+    width: 0;
+    height: 100%;
+    background-color: #086153;
+    
+    /*Lollipop background gradient*/
+    background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, .2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, .2) 50%,
+      rgba(255, 255, 255, .2) 75%,
+      transparent 75%,
+      transparent
+    );
+   
+    background-size: 30px 30px;
+    animation: move 2s linear infinite;
+    box-shadow: 2px 0 10px inset rgba(0,0,0,0.2);
+    transition: width 6s ease-out;
+  }
+  
+  /*Lollipop background gradient animation*/
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 30px 30px;
+    }
+  }
+  
+  .perc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width : 600px){
+    section{
+      padding: 0rem 2rem;
+    }
+
+    .flex{
+      flex-direction: column;
+    }
+
+    .datam{
+      margin: 1rem;
+    }
+    
+    .datam a{
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .last-para p{
+      width: 100%;
+      margin: 3rem auto;
+  }
+
+  .banner-content h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .banner-content p{
+    width: 90%;
+    margin: auto;
+    color: black;
+    font-size: 15px;
+}
+   .loader {
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    width: 50%;
+    height:90px;
+  }
+
+  .letter, .letterO{
+    font-size: 2rem;
+    margin-top: 1rem;
+    height: 30px;
+  }
+
+  .letterO{
+    height: 25px;
+  }
+
+  .time-item{
+    padding: 20px;
+    font-size: 1rem;
+}
+
+  .time-item span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.popup-cont{
+  padding: 0;
+  padding-top: 10px;
+}
+
+  .welcome{
+    font-size: 2rem;
+  }
+
+  .form{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form h4{
+    width: 90%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .time-item{
+    width: 30%;
+    margin:  1rem 5px  ;
+  }
+
+  .progress-bar {
+    height: 15px;
+    width: 80%;
+    display: block;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cont-time{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .form h4{
+    margin: .3rem;
+   }
+
+   .form{
+    padding: 10px 5px;
+   }
+
+   .banner, .banner-content, .popup-cont{
+    margin: 10px 0;
+   }
+  }
